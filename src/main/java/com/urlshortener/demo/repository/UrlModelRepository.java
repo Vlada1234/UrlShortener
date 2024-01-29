@@ -11,5 +11,5 @@ public interface UrlModelRepository extends JpaRepository<UrlModel, Long> {
     UrlModel findByKey(String key);
 
 
-
+    boolean existsByKey(String generatedKey);
 }

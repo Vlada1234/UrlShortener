@@ -12,9 +12,12 @@ public class UrlModel {
     private String key;
 
     @Column(name = "shortened_url", unique = true, nullable = false)
+    @Transient
     private String shortenedUrl;
     @Column(name = "original_url", nullable = false)
     private String originalUrl;
+    @Column(name = "key_generation_method", nullable = false)
+    private String keyGenerationMethod;
 
     public UrlModel(String key, String shortenedUrl, String originalUrl) {
         this.key = key;
@@ -54,5 +57,11 @@ public class UrlModel {
         this.originalUrl = originalUrl;
     }
 
+    public String getKeyGenerationMethod() {
+        return keyGenerationMethod;
+    }
 
+    public void setKeyGenerationMethod(String keyGenerationMethod) {
+        this.keyGenerationMethod = keyGenerationMethod;
+    }
 }

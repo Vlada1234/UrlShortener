@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add URL</title>
+</head>
+<body>
+<h2>Add URL</h2>
+<form action="/api/url/add" method="post"  enctype="application/x-www-form-urlencoded">
+    <label for="originalUrl">Original URL:</label>
+    <input type="text" id="originalUrl" name="originalUrl" required>
+
+    <label for="keyGenerationMethod">Key Generation Method:</label>
+    <select id="keyGenerationMethod" name="keyGenerationMethod">
+        <option value="uuid">UUID</option>
+        <option value="hashed">Hashed</option>
+        <option value="randomNumber">Random Number</option>
+    </select>
+    <button type="submit">Shorten URL</button>
+</form>
+<p th:if="${shortenedUrl}" th:text="${shortenedUrl}"></p>
+</body>
+</html>
