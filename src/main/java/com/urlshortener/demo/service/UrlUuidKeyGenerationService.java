@@ -3,8 +3,8 @@ package com.urlshortener.demo.service;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
-@Service("urlUuidKeyGenerationServiceImpl")
-public class UrlUuidKeyGenerationServiceImpl implements UrlKeyGenerationService{
+@Service("urlUuidKeyGenerationService")
+public class UrlUuidKeyGenerationService implements UrlKeyGenerationService{
     @Override
     public String generateKey(String input, int length) {
         UUID uuid = UUID.randomUUID();

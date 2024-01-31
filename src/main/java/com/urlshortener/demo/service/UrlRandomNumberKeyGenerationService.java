@@ -5,17 +5,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
-@Service("urlRandomNumberKeyGenerationServiceImpl")
-public class UrlRandomNumberKeyGenerationServiceImpl implements UrlKeyGenerationService {
+@Service("urlRandomNumberKeyGenerationService")
+public class UrlRandomNumberKeyGenerationService implements UrlKeyGenerationService {
 
 
     @Autowired
     private UrlModelRepository urlModelRepository;
+    private static final int NUMBER_OF_TRIES = 20;
     @Override
     public String generateKey(String input, int length) {
         Random random = new Random();
 
-        while (true) {
+        for(int i = 0; i < NUMBER_OF_TRIES; i++){
             String generatedKey = String.valueOf((Math.abs(random.nextLong())));
 
             generatedKey = generatedKey.substring(0, Math.min(length, generatedKey.length()));
@@ -26,7 +27,7 @@ public class UrlRandomNumberKeyGenerationServiceImpl implements UrlKeyGeneration
                 return generatedKey;
             }
         }
-
+        return null;
     }
 }
 

@@ -4,7 +4,7 @@ import ch.qos.logback.classic.Logger;
 import com.urlshortener.demo.model.UrlModel;
 import com.urlshortener.demo.repository.UrlModelRepository;
 import com.urlshortener.demo.service.UrlKeyGenerationService;
-import com.urlshortener.demo.service.UrlRandomNumberKeyGenerationServiceImpl;
+import com.urlshortener.demo.service.UrlRandomNumberKeyGenerationService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,14 +24,14 @@ public class UrlController {
     @Autowired
     private UrlModelRepository urlModelRepository;
     @Autowired
-    @Qualifier("urlUuidKeyGenerationServiceImpl")
+    @Qualifier("urlUuidKeyGenerationService")
     private UrlKeyGenerationService uuidKeyGenerationService;
     @Autowired
-    @Qualifier("urlHashedKeyGenerationServiceImpl")
+    @Qualifier("urlHashedKeyGenerationService")
     private UrlKeyGenerationService hashedKeyGenerationService;
     @Autowired
-    @Qualifier("urlRandomNumberKeyGenerationServiceImpl")
-    private UrlRandomNumberKeyGenerationServiceImpl randomNumberKeyGenerationService;
+    @Qualifier("urlRandomNumberKeyGenerationService")
+    private UrlRandomNumberKeyGenerationService randomNumberKeyGenerationService;
 
     @GetMapping("/add-url")
     public String showAddUrlForm() {

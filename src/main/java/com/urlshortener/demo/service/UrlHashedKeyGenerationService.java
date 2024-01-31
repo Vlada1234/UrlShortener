@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 @Service
-public class UrlHashedKeyGenerationServiceImpl implements UrlKeyGenerationService {
+public class UrlHashedKeyGenerationService implements UrlKeyGenerationService {
 
     @Override
     public String generateKey(String input, int length) {

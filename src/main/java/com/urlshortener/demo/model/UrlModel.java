@@ -3,7 +3,7 @@ package com.urlshortener.demo.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "url_model")
+@Table(name = "url_model", uniqueConstraints = @UniqueConstraint(columnNames = "short_key", name = "uk_short_key"))
 public class UrlModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
