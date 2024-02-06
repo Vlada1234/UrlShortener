@@ -26,7 +26,7 @@ Maven <3.9.6>
 Docker installed on your machine.
 
 
-Dependencies:
+## Dependencies:
 
 Spring Boot 
 
