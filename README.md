@@ -17,7 +17,8 @@ The URL shortener supports multiple key generation strategies, allowing users to
    UrlRandomNumberKeyGenerationService: Implements the UrlKeyGenerationService interface by generating random number-based keys.
    UrlUuidKeyGenerationService: Implements the UrlKeyGenerationService interface by generating keys using UUID.
 
-4. ### UrlController facilitates the addition of new URLs, retrieval of shortened URLs, and redirection to the original URLs, providing a key component for the URL shortening functionality in application.
+4. ### UrlController (com.urlshortener.demo.controller):
+5. facilitates the addition of new URLs, retrieval of shortened URLs, and redirection to the original URLs, providing a key component for the URL shortening functionality in application.
 
 ## Requirements:
 
