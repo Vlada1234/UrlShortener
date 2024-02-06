@@ -17,7 +17,7 @@ The URL shortener supports multiple key generation strategies, allowing users to
    UrlRandomNumberKeyGenerationService: Implements the UrlKeyGenerationService interface by generating random number-based keys.
    UrlUuidKeyGenerationService: Implements the UrlKeyGenerationService interface by generating keys using UUID.
 
-Requirements:
+## Requirements:
 
 JDK (21)
 
