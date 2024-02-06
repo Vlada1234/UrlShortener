@@ -1,4 +1,4 @@
-URL Shortener 
+# URL Shortener 
 This project is a simple URL shortener implementation in Java using Spring Boot.
 
 The project uses MySQL as the database system. The database schema is managed and migrated using Flyway, ensuring that the database is in sync with the application's expected structure.
