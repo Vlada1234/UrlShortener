@@ -46,9 +46,9 @@ Flyway MYSQL
 Running locally:
 
 1. Clone the Repository:
-   
-git clone <repository-url>
 
+```bash
+git clone <repository-url>
 cd <repository-directory>
 
 
