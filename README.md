@@ -46,10 +46,12 @@ Flyway MYSQL
 Running locally:
 
 1. Clone the Repository:
+To clone the repository, use the following commands:
 
 ```bash
 git clone <repository-url>
 cd <repository-directory>
+```
 
 
 3. **Build the Project:**
