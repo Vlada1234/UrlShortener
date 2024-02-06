@@ -47,7 +47,7 @@ Running locally:
 
 1. Clone the Repository
 
-To clone the repository, use the following commands:
+   To clone the repository, use the following commands:
 
 ```bash
    git clone <repository-url>
