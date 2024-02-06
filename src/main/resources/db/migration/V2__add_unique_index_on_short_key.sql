@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX uk_short_key ON url_model(short_key);
