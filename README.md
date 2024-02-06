@@ -45,7 +45,7 @@ Flyway MYSQL
 
 ## Running locally:
 
-1. Clone the Repository
+1. ### Clone the Repository
 
    To clone the repository, use the following commands:
 
@@ -76,7 +76,7 @@ Flyway MYSQL
 5. Access the Application
    Once the containers are running and migrations are complete, you can access the URL Shortener application at http://localhost:8080/api/url/add-url.
 
-Configuration:
+## Configuration:
 
 The docker-compose.yml file provides environment variables for configuring the application and database. Adjust these variables as needed for your setup.
 
@@ -86,7 +86,7 @@ SPRING_DATASOURCE_USERNAME: MySQL database username.
 
 SPRING_DATASOURCE_PASSWORD: MySQL database password.
 
-DockerFile:
+### DockerFile:
 ```Dockerfile
 FROM openjdk:21
 
