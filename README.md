@@ -99,10 +99,15 @@ ENTRYPOINT exec java $JAVA_OPTS -jar app.jar
 ```
 
 1.The base image is OpenJDK 21.
+
 2.The working directory is set to /opt.
+
 3.The environment variable PORT is set to 8080.
+
 4.Port 8080 is exposed to allow external connections.
+
 5.The JAR file from the target directory is copied to /opt/app.jar.
+
 6.The entry point runs the Java application with the specified Java options.
    
 
