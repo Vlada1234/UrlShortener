@@ -44,7 +44,9 @@ cd <repository-directory>
 
 2. **Build the Project:**
    ```bash
+   
    mvn package
+   
    build docker image:
    docker build -t your-image-name:tag .
 
