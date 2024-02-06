@@ -55,7 +55,7 @@ Flyway MYSQL
 ```
 
 
-3. **Build the Project:**
+3. ### **Build the Project:**
    ```bash
    
    To build project use following command:
