@@ -35,6 +35,7 @@ Flyway Core
 Flyway Maven Plugin 
 Flyway MYSQL 
 
+
 Running locally:
 
 1. Clone the Repository:
