@@ -4,20 +4,20 @@ This project is a simple URL shortener implementation in Java using Spring Boot.
 The project uses MySQL as the database system. The database schema is managed and migrated using Flyway, ensuring that the database is in sync with the application's expected structure.
 The URL shortener supports multiple key generation strategies, allowing users to choose the method that best suits their needs. These strategies include hashing, random number generation, and UUIDs.
 
-1. Model (com.urlshortener.demo.model):
+1. ### Model (com.urlshortener.demo.model):
    UrlModel: Represents the entity for storing URL data in the database. It includes fields such as id, key, shortenedUrl, originalUrl, and keyGenerationMethod. The key can be generated using different methods, and the UrlModel class provides getters and setters 
    for these attributes.
    
-2. Repository (com.urlshortener.demo.repository):
+2. ### Repository (com.urlshortener.demo.repository):
    UrlModelRepository: A Spring Data JPA repository interface for interacting with the database. It extends JpaRepository and includes methods for finding UrlModel by original URL, key, and checking the existence of a key.
 
-3. Service (com.urlshortener.demo.service):
+3. ### Service (com.urlshortener.demo.service):
    UrlKeyGenerationService: An interface defining a method for generating URL keys.
    UrlHashedKeyGenerationService: Implements the UrlKeyGenerationService interface by generating hashed keys using SHA-256.
    UrlRandomNumberKeyGenerationService: Implements the UrlKeyGenerationService interface by generating random number-based keys.
    UrlUuidKeyGenerationService: Implements the UrlKeyGenerationService interface by generating keys using UUID.
 
-4. UrlController facilitates the addition of new URLs, retrieval of shortened URLs, and redirection to the original URLs, providing a key component for the URL shortening functionality in application.
+4. ### UrlController facilitates the addition of new URLs, retrieval of shortened URLs, and redirection to the original URLs, providing a key component for the URL shortening functionality in application.
 
 ## Requirements:
 
