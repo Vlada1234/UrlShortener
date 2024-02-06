@@ -29,11 +29,17 @@ Docker installed on your machine.
 Dependencies:
 
 Spring Boot 
+
 Spring Boot Thymeleaf
+
 Spring Boot Web
+
 Spring Data JPA
+
 Flyway Core 
+
 Flyway Maven Plugin 
+
 Flyway MYSQL 
 
 
