@@ -58,6 +58,7 @@ Running locally:
 3. **Build the Project:**
    ```bash
    
+   To build project use following command:
    mvn package
    
    build docker image:
