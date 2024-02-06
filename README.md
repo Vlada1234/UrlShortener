@@ -68,7 +68,9 @@ Configuration:
 The docker-compose.yml file provides environment variables for configuring the application and database. Adjust these variables as needed for your setup.
 
 SPRING_DATASOURCE_URL: JDBC URL for the MySQL database.
+
 SPRING_DATASOURCE_USERNAME: MySQL database username.
+
 SPRING_DATASOURCE_PASSWORD: MySQL database password.
 
 
