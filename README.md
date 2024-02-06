@@ -70,10 +70,10 @@ Docker installed on your machine.
    To stop the Docker containers, run:
    docker-compose down
 
-4. Database Migrations with Flyway:
+4. ### Database Migrations with Flyway:
    Flyway will automatically run the database migrations to set up the necessary schema.
 
-5. Access the Application
+5. ### Access the Application
    Once the containers are running and migrations are complete, you can access the URL Shortener application at http://localhost:8080/api/url/add-url.
 
 ## Configuration:
