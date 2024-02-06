@@ -49,8 +49,8 @@ Running locally:
 To clone the repository, use the following commands:
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+   git clone <repository-url>
+   cd <repository-directory>
 ```
 
 
@@ -94,6 +94,7 @@ EXPOSE 8080
 
 COPY target/*.jar /opt/app.jar
 ENTRYPOINT exec java $JAVA_OPTS -jar app.jar
+```
 
 1.The base image is OpenJDK 21.
 2.The working directory is set to /opt.
